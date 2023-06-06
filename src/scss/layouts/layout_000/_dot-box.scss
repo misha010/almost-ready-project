@@ -1,0 +1,37 @@
+.dot-box {
+    display: flex;
+    margin-top: 31px;
+}
+
+.dot-title {
+    text-align: center;
+    border: 1px solid #EEEEEE;
+    padding: 14px 22px;
+    margin-right: 10px;
+    border-radius: 100%;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+
+    @include e(item) {
+        font-family: Quicksand;
+        font-size: rem(18px);
+        line-height: 23px;
+
+        @include m(last) {
+            padding-left: 3px;
+            padding-right: 4px;
+            position: relative;
+        }
+    }    
+}
+
+.vector-svg {
+    position: absolute;
+    padding-left: 2px;
+    padding-right: 2px;
+    top: 5px;
+    left: -10px;
+}

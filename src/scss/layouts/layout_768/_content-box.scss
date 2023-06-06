@@ -1,0 +1,91 @@
+.content-box {
+    padding-bottom: 40px;
+    margin-bottom: 46px;
+
+
+    @include e(imag) {
+        max-width: 768px;
+    }
+
+    @include m(second) {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    @include e(img) {
+        padding-top: 0;
+        margin-top: 10px;
+    }
+
+    @include e(title){
+        padding-left: 52px;
+    }
+    @include e(paragraph){
+        padding-top: 14px;
+        padding-left: 52px;
+        padding-right: 40px;
+
+    }
+    @include e(span){
+        margin-left: 52px;
+
+    }
+
+        
+    @include e(line) {
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 650px;
+            border: 1px solid #CCCCCC;
+            position: relative;
+            top: 0;
+            left: 53px;
+        }
+    }
+}
+
+.content-box_second {
+    margin-bottom: 0;
+}
+
+.div-pos {
+    top: 330px;
+}
+
+.content-box-list {
+    display: flex;
+}
+
+.content-box-list-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 52px;
+
+
+    @include e(item) {
+        padding-right: 37px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+
+        &:active {
+            color: red;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &:first-of-type {
+            padding-left: 25px;
+        }
+    }
+
+
+    @include e(link) {
+        text-decoration: none;
+        color: #333333;
+    }
+}

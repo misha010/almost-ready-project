@@ -1,0 +1,10 @@
+.categories-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 62px;
+
+    @include e(title) {
+        margin-top: 0;
+    }
+}
+
