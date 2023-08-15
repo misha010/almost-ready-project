@@ -1,0 +1,93 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) minmax(80px, 1fr) minmax(80px, 1fr) minmax(180px, 1fr);
+    grid-template-rows: 0.5fr 0.3fr;
+    grid-gap: 0;
+}
+
+.footer-first {grid-column: 1; grid-row: 1;}
+.footer-second {grid-column: 2; grid-row: 1;}
+.footer-third {grid-column: 3; grid-row: 1;}
+.footer-fourth {grid-column: 4; grid-row: 1;}
+.footer-copyright {grid-column: 1 / span 5;}
+
+.footer-first {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: rem(65px);
+}
+
+.footer-second {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: rem(70px);
+}
+
+.footer-third {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: rem(70px);
+}
+
+.footer-fourth {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: rem(70px);
+}
+
+.footer-copyright {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-second-list {
+    @include e(link) {
+        &:hover {
+            color: #30f0b6;
+        }
+    }
+}
+
+.footer-third-list {
+    @include e(link) {
+        &:hover {
+            color: #30f0b6;
+        }
+    }
+}
+
+.footer-fourth-info {
+    @include e(link) {
+            &:hover {
+                color: #30f0b6;
+            }
+    }
+}
+
+.all-icon:hover a {
+    background: #30f0b6;
+}
+
+.input-container {
+    min-width: 220px;
+    max-width: 280px;
+}
+
+.input-container .form-input {
+    font-size: rem(17px);
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+    padding-left: rem(5px);
+    padding-right: rem(60px);
+    color: white;
+    letter-spacing: rem(0.3px);
+}
+
+.invite-btn {
+    padding: rem(18px);
+}
+
+.invite-btn i {
+    font-size: rem(18px);
+}

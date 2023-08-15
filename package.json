@@ -40,5 +40,9 @@
     "webpack-concat-files-plugin": "^0.5.2",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge-and-include-globally": "^2.3.4"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "slick-animation": "^0.3.3"
   }
 }

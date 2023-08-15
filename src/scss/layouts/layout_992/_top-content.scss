@@ -1,0 +1,40 @@
+.top-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left-first {
+    @include e(link) {
+        &:hover span {
+            color: #30F0B6;
+        }
+    }
+}
+
+.left-second {
+    @include e(link) {
+        &:hover span {
+            color: #30F0B6;
+        }
+    }
+}
+
+.right-first {
+            &:hover a {
+                color: #30F0B6;
+            }
+}
+
+.right-fourth {
+        &:hover a {
+            color: #30F0B6;
+        }
+    
+}
+
+.right-third {
+        &:hover {
+            --fill-color: #30F0B6;
+        }
+}

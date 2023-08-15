@@ -1,0 +1,22 @@
+.categories-article {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.article-second-box {
+    grid-template-columns: none;
+    justify-content: initial;
+    grid-gap: 15px;
+}
+
+.article-second {
+    grid-template-columns: repeat(autto-fill, minmax(150px, 200px) minmax(150px, 200px));
+    grid-template-rows: repeat(autto-fill, minmax(150px, 200px) minmax(150px, 200px) minmax(150px, 200px));
+}
+
+.article-second_tech {grid-column: 1; grid-row: 1;}
+.article-second_film {grid-column: 1; grid-row: 2;}
+.article-second_ed {grid-column: 1; grid-row: 3;}
+.article-second_med {grid-column: 2; grid-row: 1;}
+.article-second_fash {grid-column: 2; grid-row: 2;}
+.article-second_des {grid-column: 2; grid-row: 3;}

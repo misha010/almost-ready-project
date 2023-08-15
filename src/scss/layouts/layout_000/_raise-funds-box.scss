@@ -1,0 +1,72 @@
+.raise-funds-box {
+    background: url(../../../i/bg-lines-transparent_2.jpg) no-repeat;
+    background-color: #29f0b4;
+    background-position: left center;
+    background-attachment: fixed;
+    min-height: 300px;
+    margin-left: rem(-12px);
+    margin-right: rem(-12px);
+    padding-left: rem(12px);
+    padding-right: rem(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+        @include e(title) {
+            display: flex;
+            flex-direction: column;
+            color: #1B1F2E;
+            font-size: rem(32px);
+            font-weight: 700;
+            line-height: rem(50px);
+            margin: 0;
+            padding: 0;
+        }
+
+        @include e(link) {
+                display: flex;
+                position: relative;
+                text-decoration: none;
+                background: #1B1F2D;
+                padding: rem(12px) rem(17px) rem(11px) rem(17px);
+        
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 12px;
+                    width: 12px;
+                    right: 0;
+                    top: 0;
+                    background: #FFF;
+                    transition: all 0.3s ease;
+                }
+        
+                &:active::after {
+                    height: 100%;
+                    width: 100%;
+                }
+        
+                &:active .raise-funds-box__item {
+                    color: #1B1F2D;
+                    z-index: 1;
+                    transition: all 0.6s ease;
+                }
+        
+        }
+
+        @include e(item) {
+            color: #FFF;
+            font-size: rem(14px);
+            font-weight: 500;
+            line-height: rem(20px);
+            letter-spacing: rem(3px);
+            text-transform: uppercase;
+            padding: rem(8px) rem(15px);
+        }
+
+        @include e(div) {
+            display: flex;
+            margin-top: rem(33px);
+        }
+}

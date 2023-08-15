@@ -1,0 +1,174 @@
+.counter-box-bg {
+    background: url(../../../i/bg-counter.png);
+    background-repeat: repeat-x;
+    background-color: #674df3;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+.counter-box {
+    display: grid;
+    grid-template-columns: minmax(300px, 400px);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.counter-first,
+.counter-second,
+.counter-third,
+.counter-fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-first {
+    grid-column: 1;
+    margin-top: rem(60px);
+    margin-bottom: rem(60px);
+
+    @include e(item) {
+        color: #30F0B6;
+        border: 3px solid #E9E9EE;
+        border-radius: 100%;
+        font-size: rem(48px);
+        padding: rem(25px) rem(35px);
+        margin-bottom: rem(10px);
+    }
+
+    @include e(span) {
+        color: #FFF;
+        font-size: rem(56px);
+        font-weight: 600;
+        line-height: rem(56px);
+    }
+
+    @include e(text) {
+        color: #D6CFFA;
+        font-size: rem(16px);
+        line-height: rem(33.6px);
+    }
+}
+
+.counter-second {
+    grid-column: 1;
+    margin-bottom: rem(60px);
+
+    @include e(item) {
+        color: #30F0B6;
+        border: 3px solid #E9E9EE;
+        border-radius: 100%;
+        font-size: rem(55px);
+        padding: rem(20px) rem(30px);
+        margin-bottom: rem(10px);
+    }
+        
+    @include e(span) {
+        color: #FFF;
+        font-size: rem(56px);
+        font-weight: 600;
+        line-height: rem(56px);
+    }
+        
+    @include e(text) {
+        color: #D6CFFA;
+        font-size: rem(16px);
+        line-height: rem(33.6px);
+    }
+}
+
+.counter-third {
+    grid-column: 1;
+    margin-bottom: rem(60px);
+
+        @include e(item) {
+                color: #30F0B6;
+                border: 3px solid #E9E9EE;
+                border-radius: 100%;
+                font-size: rem(55px);
+                padding: rem(20px) rem(30px);
+                margin-bottom: rem(10px);
+            }
+        
+            @include e(span) {
+                color: #FFF;
+                font-size: rem(56px);
+                font-weight: 600;
+                line-height: rem(56px);
+            }
+        
+            @include e(text) {
+                color: #D6CFFA;
+                font-size: rem(16px);
+                line-height: rem(33.6px);
+            }
+}
+
+.counter-fourth {
+    grid-column: 1;
+    margin-bottom: rem(60px);
+
+        @include e(item) {
+                color: #30F0B6;
+                border: 3px solid #E9E9EE;
+                border-radius: 100%;
+                font-size: rem(60px);
+                padding: rem(18px) rem(31px);
+                margin-bottom: rem(10px);
+            }
+        
+            @include e(span) {
+                color: #FFF;
+                font-size: rem(56px);
+                font-weight: 600;
+                line-height: rem(56px);
+            }
+        
+            @include e(text) {
+                color: #D6CFFA;
+                font-size: rem(16px);
+                line-height: rem(33.6px);
+            }
+}
+
+.counter-first,
+.counter-second,
+.counter-third,
+.counter-fourth {
+    @include e(item) {
+        position: relative;
+        transition: all .5s;
+                
+        &:active {
+            background: #30f0b6;
+            border: 3px solid #30f0b6;
+        }
+                
+        &:active i {
+            transition: all .5s;
+            color: #000;
+            animation: 1.7s ease-in-out infinite animationSvg;
+        }
+                
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            right: 15px;
+            background: #fff;
+            border-radius: 100%;
+            opacity: 0;
+            transform: scale(0);
+            transition: all .5s;
+        }
+                
+        &:active::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

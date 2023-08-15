@@ -1,0 +1,23 @@
+.help-section {
+    grid-template-columns: minmax(500px, 600px);
+}
+
+
+.help-section-first {
+    align-items: center;    
+    justify-content: center;
+
+    @include e(text) {
+        text-align: center;
+    }
+}
+
+.dl-box {
+    @include e(dt) {
+        padding: rem(20px) rem(30px);
+    }
+
+    @include e(dd) {
+        padding: rem(20px) rem(30px);
+    }
+}

@@ -1,10 +1,9 @@
 //fonts
-$google-font: "https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Quicksand&family=Ubuntu:wght@300;500;700&display=swap";
+$google-font: 'https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins:wght@400;500;600;700&display=swap';
 $prefix: prefix- !default;
 $baseFontSize: 16px;
-$baseFontFamily: "Ubuntu", sans-serif;
+$baseFontFamily: "Poppins", sans-serif;
 $mediumFontWeight: 500;
-
 $mobilePadding: 15px;
 $desktopPadding: 1rem;
 
@@ -23,6 +22,9 @@ $purple: #6f42c1 !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
 
+$bgHeaderColor: #674DF3;
+$hoverColor: #30F0B6;
+
 $colors: (
   "black": $black,
   "white": $white,
@@ -31,4 +33,6 @@ $colors: (
   "purple": $purple,
   "pink": $pink,
   "red": $red,
+  "bgHeaderColor": $bgHeaderColor,
+  "hoverColor": $hoverColor,
 ) !default;

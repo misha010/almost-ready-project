@@ -1,0 +1,205 @@
+.header-bg {
+    background: $bgHeaderColor;
+}
+
+.top-left {
+    display: none;
+}
+
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-first {
+    display: flex;
+    padding: rem(15px) 0;
+
+        @include e(link) {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            font-size: rem(14px);
+            text-decoration: none;
+            margin-right: rem(15px);
+            transition: all .5s ease;
+        }
+
+        @include e(item) {
+            font-size: rem(15px);
+            padding-right: rem(7px);
+        }
+
+            &:active a {
+                color: #30F0B6;
+            }
+}
+
+.right-second {
+    position: relative;
+    @include e(item) {
+        text-decoration: none;
+        padding: rem(8px) rem(11px);
+        background: rgba(0,0,0,0.3);
+        border-radius: 50%;
+        font-size: rem(16px);
+    }
+}
+
+.right-third {
+    position: relative;
+    @include e(item) {
+        padding-left: rem(15px);
+        padding-right: rem(16px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &:active {
+            --fill-color: #30F0B6;
+        }
+    }
+}
+
+.svg-top {
+    vertical-align: baseline;
+}
+
+.third-link {
+    padding-top: rem(2px);
+}
+
+.right-fourth {
+    display: flex;
+
+    @include e(item) {
+        font-size: rem(18px);
+        padding-right: rem(5px);
+    }
+
+    @include e(link) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-size: rem(14px);
+        text-decoration: none;
+        transition: all .5s ease;
+    }
+    
+        &:active a {
+            color: #30F0B6;
+        }
+    
+}
+
+.hide-form {
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: -30px;
+    background-color: #fff;
+    padding: rem(10px);
+    z-index: 10000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: rem(8px);
+    margin-top: rem(5px);
+
+    @include e(inp) {
+        border: 1px solid #e9e9ee;
+        padding: rem(5px) rem(5px);
+        min-width: 100%;
+
+        &:focus {
+        border: 1.2px solid #d3d3d4;
+        }
+    }
+
+    @include e(btn) {
+        padding: rem(7px) rem(10px);
+        background: #30F0B6;
+        text-align: center;
+        border-radius: rem(3px);
+        margin-top: rem(8px);
+    }
+
+    &::after {
+            content: '';
+                position: absolute;
+                bottom: 100%;
+                right: 37px;
+                border: 10px solid transparent;
+                border-bottom-color: #fff;
+                z-index: 11;
+    }
+}
+
+.hide-form.show {
+    display: block;
+}
+
+.hide-form-search {
+    display: none;
+    position: absolute; 
+    top: 42px;
+    right: -40px;
+    background-color: #fff;
+    padding: rem(10px);
+    z-index: 10000;
+    margin-top: rem(5px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+    @include e(inp) {
+        width: 185px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        padding: rem(10px) rem(5px);
+        margin-right: rem(58px);
+        font-size: rem(16px);
+
+            &:focus {
+                border: 1.2px solid #d3d3d4;
+            }
+    }
+
+    @include e(btn) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        line-height: rem(35px);
+        padding: rem(2.2px) rem(5px);
+        background: #674df4;
+        color: #fff;
+        border: none;
+        font-size: rem(13px);
+        z-index: 1;
+    }
+}
+
+.hide-form-search form {
+    position: relative;
+}
+
+.hide-form-search.show {
+    display: block;
+}
+
+.hide-items {
+    display: none;
+    position: absolute;
+    top: 44px;
+    right: 10px;
+    background-color: #fff;
+    padding: rem(20px);
+    z-index: 10000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: rem(8px);
+    margin-top: rem(5px);
+}
+
+.hide-items.show {
+    display: block;
+}

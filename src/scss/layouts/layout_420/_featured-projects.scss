@@ -1,0 +1,11 @@
+.featured-projects {
+    grid-template-columns: minmax(300px, 1fr);
+}
+
+.second-slider-card__img {
+    min-height: initial;
+}
+
+.featured-projects-content-hide {
+    padding: rem(30px) rem(25px) rem(40px) rem(25px);
+}

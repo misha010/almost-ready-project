@@ -5,20 +5,26 @@ html {
 body {
   @include getCssVar(font-family);
   font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 15px;
+  padding: 0 rem(12px);
 }
 
 .images {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  vertical-align: top;
 }
 
+.main {
+  flex: 1;
+}
 
 
 

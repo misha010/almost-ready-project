@@ -1,0 +1,10 @@
+.raise-funds-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+        @include e(div) {
+            margin: 0;
+        }
+}

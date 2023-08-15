@@ -1,0 +1,26 @@
+.bg-video {
+    padding-top: rem(80px);
+    padding-bottom: rem(80px);
+
+    @include e(title) {
+        flex-basis: 700px;
+        padding-bottom: rem(30px);
+        padding-left: 0;
+    }
+}
+
+.bg-video-button {
+    margin-right: rem(80px);
+    margin-bottom: rem(10px);
+}
+
+.trailer video {
+    max-width: 800px;
+}
+
+.close-video {
+    top: 30px;
+    right: 30px;
+    font-size: rem(20px);
+}
+

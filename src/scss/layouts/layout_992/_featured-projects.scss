@@ -1,0 +1,103 @@
+.featured-projects {
+    margin: 0 0 rem(60px) 0;
+}
+
+.featured-projects-content-hide {
+    padding: rem(30px) rem(25px) rem(40px) rem(25px);
+}
+
+.featured-projects-first-content {
+    @include e(first) {
+        padding: rem(3px) rem(14px) rem(3px) rem(14px);
+    }
+}
+
+.second-slider-card-pos {
+    @include e(img) {
+        padding: rem(7px) rem(12px);
+    }
+
+    @include e(camera) {
+        padding: rem(7px) rem(12px);
+    }
+
+    @include e(ico) {
+        font-size: rem(15px);
+    }
+}
+
+.featured-projects-text {
+    @include e(span) {
+        font-size: rem(19px);
+    }
+
+    @include e(title) {
+        font-size: rem(40px);
+    }
+}
+
+.second-slider-card:hover .featured-projects-content-hide {
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.second-slider-card:hover .featured-projects-content-hide .featured-projects-first-content__second {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:hover .featured-projects-content-hide .featured-projects-first-content__icon {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:hover .featured-projects-content-hide .featured-projects-content-hide__third {
+    color: #1b1f2e;
+    transition: all .7s;
+}
+
+.second-slider-card:hover .featured-projects-content-hide .featured-projects-second-content__goal {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:hover .featured-projects-content-hide .featured-projects-second-content__per {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:hover .featured-projects-content-hide .featured-projects-second-content__line {
+    background: #d8dae1;
+    transition: all .7s;
+}
+
+.second-slider-card-pos__img:hover {
+    background: #674df0;
+    transition: all .7s;
+}
+
+.second-slider-card-pos__camera:hover {
+    background: #674df0;
+    transition: all .7s;
+}
+
+.slick-dots li {
+    padding: 0 rem(4px);
+}
+
+.slick-dots button {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.second-slider-card {
+    overflow: hidden;
+}
+
+.second-slider-card img {
+    transition: all .5s;
+}
+
+.second-slider-card:hover .second-slider-card__img {
+    transform: scale(1.1);
+}

@@ -1,0 +1,5 @@
+.main-slider-box {
+    @include e(h) {
+        max-width: 400px;
+    }
+}

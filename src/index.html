@@ -1,252 +1,1050 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>title</title>
+    <title>Home 1 | Krowd - Crowdfunding</title>
+    <link type="image/png" rel="icon" href="i/favicon.png.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header-box">
-
-        <div class="logo-box-img">
-          <img src="i/logo.svg"/>
-          <div class="logo-box-text">
-            <h1 class="logo-box-text__h">Doremi</h1>
-            <p class="logo-box-text__p">Buy, Sell Or Rent</p>
-          </div>
-        </div>
-
-        <nav class="nav">
-          <ul class="nav-box">
-            <li class="nav-box__item"><a class="nav-box__link" href="#">Explore</a></li>
-            <li class="nav-box__item"><a class="nav-box__link" href="#">About Us</a></li>
-            <li class="nav-box__item"><a class="nav-box__link" href="#">Pages</a></li>
-            <li class="nav-box__item"><a class="nav-box__link" href="#"><span class="icon-nav"><i class="fa-solid fa-arrow-right-to-bracket fa-lg" style="color: #e10e0e;"></i></span> Sign in or Register</a></li>
-          </ul>
-        </nav>
-
-        <div class="info-box">
-          <div class="info-box__img">
-            <img src="i/Vector.jpg">
+    <div class="header-bg">
+      <div class="container">
+        <article class="top-content">
+          <!-- ===== TOP LEFT START ===== -->
+          <div class="top-left">
+            <div class="left-first">
+              <a
+                class="left-first__link"
+                target="_blank"
+                href="mailto:needhelp@codesk.com">
+                <span class="left-first__item">
+                  <span class="icon-span">
+                    <i class="fa-solid fa-envelope" style="color: #30f0b6"></i>
+                  </span>
+                  needhelp@krowd.com
+                </span>
+              </a>
             </div>
-          <div class="info-box__content">
-            <p class="info-box__p">Eng</p>
-          <div class="eng-img">
-            <img class="eng-img__f" src="i/eng.svg">
+            <div class="left-second">
+              <a
+                class="left-second__link"
+                target="_blank"
+                href="https://www.google.com/maps/place/20th+St,+Brooklyn,+NY,+USA/@40.6593265,-73.9907127,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25ae0d2d00339:0xa20643bcd77dd39d!8m2!3d40.6593225!4d-73.988524?hl=en">
+                <span class="left-second__item">
+                  <span class="icon-span">
+                    <i
+                      class="second-icon-js fa-sharp fa-solid fa-location-dot"
+                      style="color: #30f0b6"></i>
+                  </span>
+                  66 Broklyn Street, USA
+                </span>
+              </a>
+            </div>
           </div>
-          <div class="icon-svg">
-            <img class="eng-img__c" src="i/Icon.svg">
+          <!-- ===== TOP LEFT END ===== -->
+          <!-- ===== TOP RIGHT START ===== -->
+          <div class="top-right">
+            <div class="right-first">
+              <a class="right-first__link" href="#">
+                <span class="right-first__item">
+                  <i
+                    class="fa-sharp fa-regular fa-plus fa-xl"
+                    style="color: #30f0b6"></i>
+                </span>
+                Donate Now
+              </a>
+            </div>
+            <div class="right-second">
+              <a href="#" class="right-second__item">
+                <span>
+                  <i class="fa-solid fa-user" style="color: #ffffff"></i>
+                </span>
+              </a>
+              <div class="hide-form">
+                <form>
+                  <label for="f-1">Email</label>
+                  <input
+                    autocomplete="off"
+                    class="hide-form__inp"
+                    type="email"
+                    id="f-1" />
+                  <label for="f-2">Password</label>
+                  <input
+                    autocomplete="off"
+                    class="hide-form__inp"
+                    type="password"
+                    id="f-2" />
+                  <input type="submit" class="hide-form__btn" value="Submit" />
+                </form>
+              </div>
+            </div>
+            <div class="right-third">
+              <span class="right-third__item">
+                <a class="third-link" href="#">
+                  <svg
+                    class="svg-top"
+                    width="21"
+                    height="21"
+                    xmlns="http://www.w3.org/1999/svg">
+                    <use xlink:href="i/sprite2.svg#Vector" />
+                  </svg>
+                </a>
+              </span>
+              <div class="hide-form-search">
+                <form>
+                  <input class="hide-form-search__inp" type="text" />
+                  <input
+                    type="submit"
+                    class="hide-form-search__btn"
+                    value="Search" />
+                </form>
+              </div>
+            </div>
+            <div class="right-fourth">
+              <a class="right-fourth__link" href="#">
+                <span class="right-fourth__item">
+                  <i
+                    class="fa-sharp fa-solid fa-cart-shopping"
+                    style="color: #ffffff"></i>
+                </span>
+                0 items
+              </a>
+              <div class="hide-items">
+                <span class="hide-items__text">You have 0 items</span>
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-
-
-        <div class="form-box">
-          <form class="form">
-            <span class="form__span">Search...</span>
-            <input class="form__control" type="text">
-          </form>
-        </div>
-      </header>
-    </div>
-
-    <div class="slogan-box-color">
-    <div class="container">
-
-      <article class="slogan-box">
-        <!-- <svg class="svg-icon">
-          <use xlink:href="i/sprite.svg#auf_banner_image-1"></use>
-          </svg> -->
-          <div class="slogan-box__svg">
-            <img src="i/auf_banner_image 1.svg">
-          </div>
-        <h2 class="slogan-box__content">Help Ukraine with the Beetroot Tech Relief Fund</h2>
         </article>
-
-    </div>
-  </div>
-
-
-    <div class="container">
-      <div class="content-box">
-        <div class="content-box__img">
-          <img class="images content-box__imag" src="i/medium.png"
-          srcset="i/medium.png" 768w>
-          <div class="div-pos">
-            <p class="div-pos__first">26</p>
-            <p class="div-pos__second">sep</p>
-          </div>
-        </div>
-        <!-- <div class="div-pos">
-          <p class="div-pos__first">26</p>
-          <p class="div-pos__second">sep</p>
-        </div> -->
-        <h3 class="content-box__title">How To Buy, Sell or Rent Items From Doremi</h3>
-        <div class="content-box-list">
-          <ul class="content-box-list-ul">
-            <li class="content-box-list-ul__item"><a class="content-box-list-ul__link" href="#">Admin</a></li>
-            <li class="content-box-list-ul__item"><a class="content-box-list-ul__link" href="#">Rent Buy Sell</a></li>
-            <li class="content-box-list-ul__item"><a class="content-box-list-ul__link" href="#">56 Comments</a></li>
-          </ul>
-        </div>
-        <div class="content-box__line"></div>
-        <p class="content-box__paragraph">Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems ipsum dolor
-          amet consecteur eiusmod tempor incididunt ut labore et dolor magna minim venia quis nostrud exercitation ullamco laboris nisi ut aliquip.
-        </p>
-        <span class="content-box__span">Read more</span>
-      </div>
-
-
-      <div class="content-box content-box_second">
-        <div class="content-box__img">
-          <img class="images content-box__imag" src="i/medium.png">
-          <div class="div-pos">
-            <p class="div-pos__first">26</p>
-            <p class="div-pos__second">sep</p>
-          </div>
-        </div>
-        <!-- <div class="div-pos">
-          <p class="div-pos__first">26</p>
-          <p class="div-pos__second">sep</p>
-        </div> -->
-        <h3 class="content-box__title">How To Buy, Sell or Rent Items From Doremi</h3>
-        <div class="content-box-list">
-          <ul class="content-box-list-ul">
-            <li class="content-box-list-ul__item"><a class="content-box-list-ul__link" href="#">Admin</a></li>
-            <li class="content-box-list-ul__item"><a class="content-box-list-ul__link" href="#">Rent Buy Sell</a></li>
-            <li class="content-box-list-ul__item"><a class="content-box-list-ul__link" href="#">56 Comments</a></li>
-          </ul>
-        </div>
-        <div class="content-box__line"></div>
-        <p class="content-box__paragraph">Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems ipsum dolor
-          amet consecteur eiusmod tempor incididunt ut labore et dolor magna minim venia quis nostrud exercitation ullamco laboris nisi ut aliquip.
-        </p>
-        <span class="content-box__span">Read more</span>
-      </div>
-
-      <div class="dot-box">
-        <div class="dot-title">
-          <span class="dot-title__item">1</span>
-        </div>
-        <div class="dot-title">
-          <span class="dot-title__item">2</span>
-        </div>
-        <div class="dot-title">
-          <span class="dot-title__item">3</span>
-        </div>
-        <div class="dot-title">
-          <span class="dot-title__item dot-title__item_last">
-            <img class="vector-svg" src="i/vector.svg.svg">
-          </span>
-        </div>
       </div>
     </div>
-
-    <div class="container">
-    <div class="categories-article-box">
-      <div class="categories-box">
-        <h3 class="categories-box__title">Blog Categories</h3>
-
-        <ul class="categorie-list">
-          <li class="categorie-list__item">
-            <a class="categorie-list__link" href="#">Buying Items</a>
-            <span class="categorie-list__span categorie-list__span_first">(87)</span>
-            <span class="categorie-list__line"></span>
-          </li>
-          <li class="categorie-list__item">
-            <a class="categorie-list__link" href="#">Selling Items</a>
-            <span class="categorie-list__span categorie-list__span_second">(12)</span>
-            <span class="categorie-list__line"></span>
-          </li>
-          <li class="categorie-list__item">
-            <a class="categorie-list__link" href="#">Renting Items</a>
-            <span class="categorie-list__span categorie-list__span_third">(34)</span>
-            <span class="categorie-list__line"></span>
-          </li>
-          <li class="categorie-list__item">
-            <a class="categorie-list__link" href="#">Promote Business</a>
-            <span class="categorie-list__span categorie-list__span_fourth">(9)</span>
-            <span class="categorie-list__line"></span>
-          </li>
-          <li class="categorie-list__item">
-            <a class="categorie-list__link" href="#">Worldwide Cities</a>
-            <span class="categorie-list__span categorie-list__span_five">(50)</span>
-            <span class="categorie-list__line"></span>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="article-box">
-        <h3 class="article-box__title">Our Top Articles</h3>
-        <div class="top-article-box">
-        <div class="div-gray">
-        </div>
-        <div class="article-div">
-        <h4 class="article-div__item">How to spend up free
-          vacations</h4>
-          <p class="article-div__p">Cars, Bikes & Trucks</p>
-        </div>
-        </div>
-        <span class="categorie-list__line"></span>
-      <!-- </div> -->
-
-      <!-- <div class="article-box"> -->
-        <div class="top-article-box top-article-box_second">
-        <div class="div-gray">
-        </div>
-        <div class="article-div">
-        <h4 class="article-div__item">Welcome to quarantine
-          free travel</h4>
-          <p class="article-div__p">Drones, Cameras
-          </p>
-        </div>
-        </div>
-        <span class="categorie-list__line"></span>
-
-      <!-- <div class="article-box"> -->
-        <div class="top-article-box top-article-box_third">
-        <div class="div-gray">
-        </div>
-        <div class="article-div">
-        <h4 class="article-div__item">10 most beautiful cities for traveling</h4>
-          <p class="article-div__p">Electronic Items</p>
-        </div>
-        </div>
-      </div>
-    <!-- </div> -->
-
-  </div>
-</div>
-
-
-
-    <div class="purple-box-color">
-    <div class="container">
-        <div class="purple-box">
-          <div class="image-box">
-            <img class="image-box__img" src="i/icon.png">
+    <!-- ===== TOP RIGHT END ===== -->
+    <!-- ===== HEADER BOX START ===== -->
+    <header class="header">
+      <div class="container">
+        <section class="header-box">
+          <div class="logo-img">
+            <a href="index.html">
+              <img class="images" src="i/logo.png" alt="Logo" />
+            </a>
           </div>
-          <div class="purple-box-content">
-          <h2 class="purple-box-content__title">Join Us & Get Listed</h2>
-          <p class="purple-box-content__item">Eiusmod tempor incididunt ut labore exercitation ullamco laboris.</p>
-            <div class="purple-form">
-              <form class="purple-form-box">
-                <span class="purple-form-box__span">Enter your email</span>
-                <input type="email">
+          <div class="menu-box">
+            <a href="#" class="menu-button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- ===== DESKTOP MENU START ===== -->
+          <div class="nav-info-line">
+            <nav class="nav-box">
+              <ul class="menu-open-box">
+                <li class="menu-open-box__item">
+                  <a class="menu-open-box__link" href="#">
+                    Home
+                    <span class="menu-open-box__icon">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </a>
+                  <ul class="second-ul">
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="index.html">Home 1</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="index.html">Home 2</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="index.html">Home 3</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="index.html">Home 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-open-box__item">
+                  <a class="menu-open-box__link" href="#">
+                    Campaigns
+                    <span class="menu-open-box__icon">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </a>
+                  <ul class="second-ul">
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Campaigns Grid</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Campaigns List</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Campaigns Single</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-open-box__item">
+                  <a class="menu-open-box__link" href="#">
+                    Pages
+                    <span class="menu-open-box__icon">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </a>
+                  <ul class="second-ul">
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">About</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Our Mission</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Company Everview</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Team Grid</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Events</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Gallery</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-open-box__item">
+                  <a class="menu-open-box__link" href="#">
+                    Features
+                    <span class="menu-open-box__icon">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </a>
+                  <ul class="second-ul">
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Call To Action</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Icon Box</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Heading Style</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Pricing</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Animation</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-open-box__item">
+                  <a class="menu-open-box__link" href="#">
+                    Blog
+                    <span class="menu-open-box__icon">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </a>
+                  <ul class="second-ul">
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Grid Layout</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">List Layout</a>
+                    </li>
+                    <li class="second-ul__item">
+                      <a class="second-ul__link" href="#">Masonry Layout</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-open-box__item">
+                  <a class="menu-open-box__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- ===== MENU BOX END ===== -->
+            <!-- ===== INFO BOX START ===== -->
+            <div class="info-box">
+              <span class="info-box__icon">
+                <i
+                  class="fa-sharp fa-solid fa-comments fa-2xl"
+                  style="color: #674df3"></i>
+              </span>
+              <div class="info-box-content">
+                <span class="info-box-content__text">Call Anytime</span>
+                <span class="info-box-content__span">
+                  <a class="info-box-content__number" href="tel: 666 888 000">
+                    666 888 000
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!-- ===== INFO BOX END ===== -->
+          </div>
+          <!-- ===== MOBILE MENU START ===== -->
+          <div class="dark-overlay"></div>
+          <div class="mobile-menu">
+            <a href="#" class="menu-button in-mobile active">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <nav class="mobile-navigation">
+              <ul class="mobile-ul">
+                <li class="has-submenu">
+                  <a class="is-submenu" href="#">Home</a>
+                  <ul class="mobile-submenu">
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Home 1</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Home 2</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Home 3</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Home 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-submenu">
+                  <a class="is-submenu" href="#">Campaigns</a>
+                  <ul class="mobile-submenu">
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">
+                        Campaigns Grid
+                      </a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">
+                        Campaigns List
+                      </a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">
+                        Campaigns Single
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-submenu">
+                  <a class="is-submenu" href="#">Pages</a>
+                  <ul class="mobile-submenu">
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">About</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Our Mission</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">
+                        Company Everview
+                      </a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Team Grid</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Events</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Gallery</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-submenu">
+                  <a class="is-submenu" href="#">Features</a>
+                  <ul class="mobile-submenu">
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">
+                        Call To Action
+                      </a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Icon Box</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Heading Style</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Pricing</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Animation</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-submenu">
+                  <a class="is-submenu" href="#">Blog</a>
+                  <ul class="mobile-submenu">
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">Grid Layout</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">List Layout</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="mobile-submenu__link" href="#">
+                        Masonry Layout
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="not-submenu-item">
+                  <a class="not-submenu-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- ===== MOBILE MENU END ===== -->
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- ===== HEADER BOX END ===== -->
+    <!-- ===== MAIN SLIDER BOX START ===== -->
+    <div id="slider" class="slider">
+      <div class="slider-photo">
+        <div class="container">
+          <section class="main-slider-box">
+            <p
+              class="main-slider-box__p animate__animated"
+              data-animation-in="animate__fadeInTopLeft">
+              Raising Money Has Never Been So Easy
+            </p>
+            <h2
+              class="main-slider-box__h animate__animated"
+              data-animation-in="animate__fadeInLeft">
+              Crowdfunding Platforms
+            </h2>
+            <a
+              class="main-slider-box__link animate__animated"
+              data-animation-in="animate__fadeInUp"
+              href="#">
+              <span class="main-slider-box__item"> Start a Project</span>
+            </a>
+          </section>
+        </div>
+      </div>
+      <div class="slider-photo-second">
+        <div class="container">
+          <section class="main-slider-box">
+            <p
+              class="main-slider-box__p animate__animated"
+              data-animation-in="animate__fadeInTopRight">
+              Raising Money Has Never Been So Easy
+            </p>
+            <h2
+              class="main-slider-box__h animate__animated"
+              data-animation-in="animate__fadeInRight">
+              Crowdfunding Platforms
+            </h2>
+            <a
+              class="main-slider-box__link animate__animated"
+              data-animation-in="animate__fadeInUp"
+              href="#">
+              <span class="main-slider-box__item"> Start a Project</span>
+            </a>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- ===== MAIN SLIDER BOX END ===== -->
+    <!-- ===== TOP CATEGORIES START ===== -->
+    <section class="section">
+      <div class="top-categiries-photo">
+        <div class="container">
+          <article class="categories-article">
+            <div class="article-first">
+              <p class="article-first__p">Which Category Intrest You</p>
+              <h3 class="article-first__h">Top Categories</h3>
+              <span class="article-first__span">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the when an unknown was popularised.
+              </span>
+              <div class="article-first-info">
+                <div class="article-first-info__photo">
+                  <img
+                    class="article-first-info__img images"
+                    src="i/image-top-article.png" />
+                </div>
+                <span class="article-first-info__text"> Christine Eve</span>
+              </div>
+            </div>
+            <div class="article-second-box">
+              <div class="article-second article-second_tech ddd">
+                <div class="article-second__photo">
+                  <img
+                    class="article-second__svg"
+                    src="i/categories-1.svg"
+                    alt="Technology" />
+                </div>
+                <span class="article-second__span">Technology</span>
+              </div>
+              <div class="article-second article-second_film ddd">
+                <div class="article-second__photo">
+                  <img
+                    class="article-second__svg"
+                    src="i/categories-2.svg"
+                    alt="Film & Videos" />
+                </div>
+                <span class="article-second__span">Film & Videos</span>
+              </div>
+              <div class="article-second article-second_ed ddd">
+                <div class="article-second__photo">
+                  <img
+                    class="article-second__svg"
+                    src="i/categories-3.svg"
+                    alt="Education" />
+                </div>
+                <span class="article-second__span">Education</span>
+              </div>
+              <div class="article-second article-second_med fff">
+                <div class="article-second__photo">
+                  <img
+                    class="article-second__svg"
+                    src="i/categories-4.svg"
+                    alt="Medical" />
+                </div>
+                <span class="article-second__span">Medical</span>
+              </div>
+              <div class="article-second article-second_fash fff">
+                <div class="article-second__photo">
+                  <img
+                    class="article-second__svg"
+                    src="i/categories-5.svg"
+                    alt="Fashion" />
+                </div>
+                <span class="article-second__span">Fashion</span>
+              </div>
+              <div class="article-second article-second_des fff">
+                <div class="article-second__photo">
+                  <img
+                    class="article-second__svg"
+                    src="i/categories-6.svg"
+                    alt="Design" />
+                </div>
+                <span class="article-second__span">Design</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ===== TOP CATEGORIES END ===== -->
+    <!-- ===== RAISE FUND BOX START ===== -->
+    <aside class="aside">
+      <div class="container">
+        <article class="raise-funds-box">
+          <h3 class="raise-funds-box__title">Ready to Raise Funds for Idea?</h3>
+          <div class="raise-funds-box__div">
+            <a class="raise-funds-box__link" href="#">
+              <span class="raise-funds-box__item"> Make it happen</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </aside>
+    <!-- ===== RAISE FUND BOX END ===== -->
+    <!-- ===== FEATURED PROJECTS START ===== -->
+    <main class="main">
+      <div class="container">
+        <section class="featured-projects">
+          <div class="featured-projects-text">
+            <span class="featured-projects-text__span">
+              Businesses You Can Back
+            </span>
+            <h3 class="featured-projects-text__title">Featured Projects</h3>
+          </div>
+          <div class="second-slider" id="second-slider">
+            <div class="second-slider-card second-slider-card_first">
+              <img
+                class="second-slider-card__img"
+                src="i/donation-2-main.jpeg"
+                alt="" />
+              <div class="featured-projects-content-hide">
+                <div class="featured-projects-first-content">
+                  <a href="#" class="featured-projects-first-content__first">
+                    Environmental
+                  </a>
+                  <span class="featured-projects-first-content__span">
+                    <i
+                      class="featured-projects-first-content__icon fa-regular fa-clock"></i>
+                  </span>
+                  <span class="featured-projects-first-content__second">
+                    537 Days left
+                  </span>
+                </div>
+                <a href="#" class="featured-projects-content-hide__third">
+                  Driving Robot for Target Shooting Game
+                </a>
+                <div class="featured-projects-second-content">
+                  <span class="featured-projects-second-content__goal">
+                    $6,500 Raised of $21,000 Goal
+                  </span>
+                  <span class="featured-projects-second-content__per">
+                    31%
+                  </span>
+                </div>
+                <span class="featured-projects-second-content__line">
+                  <span
+                    class="animate-line featured-projects-second-content__second-line"
+                    data-count="31%"></span>
+                </span>
+              </div>
+              <div class="second-slider-card-pos">
+                <a class="second-slider-card-pos__img" href="#">
+                  <i
+                    class="second-slider-card-pos__ico fa-regular fa-image"></i>
+                </a>
+                <a class="second-slider-card-pos__camera" href="#">
+                  <i class="second-slider-card-pos__ico fa-solid fa-camera"></i>
+                </a>
+              </div>
+            </div>
+            <div class="second-slider-card second-slider-card_second">
+              <img
+                class="second-slider-card__img"
+                src="i/donation-1-main.jpeg"
+                alt="" />
+              <div class="featured-projects-content-hide">
+                <div class="featured-projects-first-content">
+                  <a href="#" class="featured-projects-first-content__first">
+                    Charity
+                  </a>
+                  <span class="featured-projects-first-content__span">
+                    <i
+                      class="featured-projects-first-content__icon fa-regular fa-clock"></i>
+                  </span>
+                  <span class="featured-projects-first-content__second">
+                    616 Days left
+                  </span>
+                </div>
+                <a href="#" class="featured-projects-content-hide__third">
+                  Beautiful color for designers & students
+                </a>
+                <div class="featured-projects-second-content">
+                  <span class="featured-projects-second-content__goal">
+                    $5,000 Raised of $18,000 Goal
+                  </span>
+                  <span class="featured-projects-second-content__per">
+                    27.8%
+                  </span>
+                </div>
+                <span class="featured-projects-second-content__line">
+                  <span
+                    class="animate-line featured-projects-second-content__third-line"
+                    data-count="27.8%"></span>
+                </span>
+              </div>
+              <div class="second-slider-card-pos">
+                <a class="second-slider-card-pos__img" href="#">
+                  <i
+                    class="second-slider-card-pos__ico fa-regular fa-image"></i>
+                </a>
+                <a class="second-slider-card-pos__camera" href="#">
+                  <i class="second-slider-card-pos__ico fa-solid fa-camera"></i>
+                </a>
+              </div>
+            </div>
+            <div class="second-slider-card second-slider-card_third">
+              <img
+                class="second-slider-card__img"
+                src="i/donation-3.jpeg"
+                alt="" />
+              <div class="featured-projects-content-hide">
+                <div class="featured-projects-first-content">
+                  <a href="#" class="featured-projects-first-content__first">
+                    Charity
+                  </a>
+                  <span class="featured-projects-first-content__span">
+                    <i
+                      class="featured-projects-first-content__icon fa-regular fa-clock"></i>
+                  </span>
+                  <span class="featured-projects-first-content__second">
+                    711 Days left
+                  </span>
+                </div>
+                <a href="#" class="featured-projects-content-hide__third">
+                  Mirror One | Your life at a glance
+                </a>
+                <div class="featured-projects-second-content">
+                  <span class="featured-projects-second-content__goal">
+                    $5,000 Raised of $15,000 Goal
+                  </span>
+                  <span class="featured-projects-second-content__per">
+                    33.3%
+                  </span>
+                </div>
+                <span class="featured-projects-second-content__line">
+                  <span
+                    class="animate-line featured-projects-second-content__second-line"
+                    data-count="33.3%"></span>
+                </span>
+              </div>
+              <div class="second-slider-card-pos">
+                <a class="second-slider-card-pos__img" href="#">
+                  <i
+                    class="second-slider-card-pos__ico fa-regular fa-image"></i>
+                </a>
+                <a class="second-slider-card-pos__camera" href="#">
+                  <i class="second-slider-card-pos__ico fa-solid fa-camera"></i>
+                </a>
+              </div>
+            </div>
+            <div class="second-slider-card second-slider-card_fourth">
+              <img
+                class="second-slider-card__img"
+                src="i/donation-4.jpeg"
+                alt="" />
+              <div class="featured-projects-content-hide">
+                <div class="featured-projects-first-content">
+                  <a href="#" class="featured-projects-first-content__first">
+                    Environmental
+                  </a>
+                  <span class="featured-projects-first-content__span">
+                    <i
+                      class="featured-projects-first-content__icon fa-regular fa-clock"></i>
+                  </span>
+                  <span class="featured-projects-first-content__second">
+                    135 Days left
+                  </span>
+                </div>
+                <a href="#" class="featured-projects-content-hide__third">
+                  Smart Reach Audio Software
+                </a>
+                <div class="featured-projects-second-content">
+                  <span class="featured-projects-second-content__goal">
+                    $6,030 Raised of $12,000 Goal
+                  </span>
+                  <span class="featured-projects-second-content__per">
+                    50.3%
+                  </span>
+                </div>
+                <span class="featured-projects-second-content__line">
+                  <span
+                    class="animate-line featured-projects-second-content__fourth-line"
+                    data-count="50.3%"></span>
+                </span>
+              </div>
+              <div class="second-slider-card-pos">
+                <a class="second-slider-card-pos__img" href="#">
+                  <i
+                    class="second-slider-card-pos__ico fa-regular fa-image"></i>
+                </a>
+                <a class="second-slider-card-pos__camera" href="#">
+                  <i class="second-slider-card-pos__ico fa-solid fa-camera"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- ===== FEATURED PROJECTS END ===== -->
+
+    <!-- ===== COUNTER BOX START ===== -->
+    <div class="counter-box-bg">
+      <div class="container">
+        <aside class="counter-box">
+          <div class="counter-first">
+            <div class="counter-first__item">
+              <i class="fa-solid fa-clipboard-check fa-xl"></i>
+            </div>
+            <span class="counter counter-first__span" data-val="690">690</span>
+            <span class="counter-first__text">Projects Completed</span>
+          </div>
+          <div class="counter-second">
+            <div class="counter-second__item">
+              <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <span class="counter counter-second__span" data-val="808">808</span>
+            <span class="counter-second__text">Raised to Date</span>
+          </div>
+          <div class="counter-third">
+            <div class="counter-third__item">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <span class="counter counter-third__span" data-val="560">560</span>
+            <span class="counter-third__text">Partner Fundings</span>
+          </div>
+          <div class="counter-fourth">
+            <div class="counter-fourth__item">
+              <i class="fa-solid fa-person-circle-check"></i>
+            </div>
+            <span class="counter counter-fourth__span" data-val="990">990</span>
+            <span class="counter-fourth__text">Happy Repeat Customers</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- ===== COUNTER BOX END ===== -->
+    <!-- ===== BG VIDEO START ===== -->
+    <aside class="bg-video-photo">
+      <div class="container">
+        <article class="bg-video">
+          <h3 class="bg-video__title">
+            Krowd is changing the way people and companies work.
+          </h3>
+          <div class="bg-video-button">
+            <a class="bg-video-button__icon" id="link-video">
+              <i class="bg-video-button__ico fa-solid fa-play"></i>
+            </a>
+          </div>
+          <div class="trailer">
+            <video
+              src="i/APPLE CAMPUS 2_ November 2016 Construction Update.mp4"
+              controls="true"
+              loop></video>
+            <button class="close-video">
+              <i class="fa-solid fa-x fa-2xl"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+    </aside>
+    <!-- ===== BG VIDEO END ===== -->
+    <!-- =====  HELP SECTION START ===== -->
+    <div class="help-section-bg">
+      <div class="container">
+        <section class="help-section">
+          <div class="help-section-first">
+            <span class="help-section-first__span"
+              >Frequently Asked Questions</span
+            >
+            <h3 class="help-section-first__title">How Can We Help?</h3>
+            <p class="help-section-first__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Have you done google research which works all the time.
+            </p>
+            <div class="help-section-block">
+              <div class="help-section-first-block help-div">
+                <div class="help-section-first-block-b1 block-help">
+                  <img
+                    class="block-help__img"
+                    src="i/categories-4.svg"
+                    alt="Backers" />
+                  <span class="block-help__text">Backers</span>
+                </div>
+              </div>
+              <div class="help-section-second-block help-div">
+                <div class="help-section-second-block-b2 block-help">
+                  <img
+                    class="block-help__img"
+                    src="i/categories-6.svg"
+                    alt="Compaings" />
+                  <span class="block-help__text">Compaigns</span>
+                </div>
+              </div>
+              <div class="help-section-third-block help-div">
+                <div class="help-section-third-block-b3 block-help">
+                  <img
+                    class="block-help__img"
+                    src="i/categories-3.svg"
+                    alt="Education" />
+                  <span class="block-help__text">Education</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="help-section-second">
+            <dl class="dl-box" id="dl-box">
+              <dt class="dl-box__dt">
+                <span class="dl-box__span">1.</span> Is my campaign allowed on
+                krowd?
+              </dt>
+              <dd class="dl-box__dd">
+                There are many variations of passages the majority have suffered
+                alteration in some fo injected humour, or randomised words.
+              </dd>
+
+              <dt class="dl-box__dt">
+                <span class="dl-box__span">2.</span> How to soft launch your
+                campaign
+              </dt>
+              <dd class="dl-box__dd">
+                There are many variations of passages the majority have suffered
+                alteration in some fo injected humour, or randomised words.
+              </dd>
+
+              <dt class="dl-box__dt">
+                <span class="dl-box__span">3.</span> How to turn visitors into
+                contributors
+              </dt>
+              <dd class="dl-box__dd">
+                There are many variations of passages the majority have suffered
+                alteration in some fo injected humour, or randomised words.
+              </dd>
+
+              <dt class="dl-box__dt">
+                <span class="dl-box__span">4.</span> How can i find my campaign?
+              </dt>
+              <dd class="dl-box__dd">
+                There are many variations of passages the majority have suffered
+                alteration in some fo injected humour, or randomised words.
+              </dd>
+            </dl>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- =====  HELP SECTION END ===== -->
+
+    <!-- ===== FOOTER START ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <article class="footer-first">
+            <div class="footer-first-image">
+              <a href="#">
+                <img
+                  class="footer-first-image__img"
+                  src="i/logo-footer-white.png"
+                  alt="Logo footer" />
+              </a>
+            </div>
+            <div class="footer-first-content">
+              <p class="footer-first-content__text">
+                Lorem quas utamur delicata qui, vix ei prima mentitum omnesque.
+                Duo corrumpit cotidieque ne.
+              </p>
+            </div>
+            <div class="footer-icons">
+              <div class="footer-icons__first all-icon">
+                <a
+                  target="_blank"
+                  class="footer-icons__icon"
+                  href="https://twitter.com/">
+                  <i class="footer-icons__ico fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div class="footer-icons__second all-icon">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/"
+                  class="footer-icons__icon">
+                  <i class="footer-icons__ico fa-brands fa-facebook"></i>
+                </a>
+              </div>
+              <div class="footer-icons__third all-icon">
+                <a
+                  target="_blank"
+                  href="https://www.pinterest.com/"
+                  class="footer-icons__icon">
+                  <i class="footer-icons__ico fa-brands fa-pinterest"></i>
+                </a>
+              </div>
+              <div class="footer-icons__fourth all-icon">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/"
+                  class="footer-icons__icon">
+                  <i class="footer-icons__ico fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="footer-second">
+            <div class="footer-second-content">
+              <h4 class="footer-second-content__text">Company</h4>
+              <ul class="footer-second-list">
+                <li class="footer-second-list__li">
+                  <a class="footer-second-list__link" href="#">About Us</a>
+                </li>
+                <li class="footer-second-list__li">
+                  <a class="footer-second-list__link" href="#">How It Works</a>
+                </li>
+                <li class="footer-second-list__li">
+                  <a class="footer-second-list__link" href="#">Knowledge Hub</a>
+                </li>
+                <li class="footer-second-list__li">
+                  <a class="footer-second-list__link" href="#">
+                    Success Stories
+                  </a>
+                </li>
+                <li class="footer-second-list__li">
+                  <a class="footer-second-list__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="footer-third">
+            <h4 class="footer-third-content__text">Fundraising</h4>
+            <ul class="footer-third-list">
+              <li class="footer-third-list__li">
+                <a class="footer-third-list__link" href="#">Education</a>
+              </li>
+              <li class="footer-third-list__li">
+                <a class="footer-third-list__link" href="#">Design</a>
+              </li>
+              <li class="footer-third-list__li">
+                <a class="footer-third-list__link" href="#">Film & Video</a>
+              </li>
+              <li class="footer-third-list__li">
+                <a class="footer-third-list__link" href="#">Technology</a>
+              </li>
+              <li class="footer-third-list__li">
+                <a class="footer-third-list__link" href="#">Games</a>
+              </li>
+            </ul>
+          </article>
+          <article class="footer-fourth">
+            <div class="footer-fourth-content">
+              <h4 class="footer-fourth-content__title">Contact info</h4>
+              <span class="footer-fourth-info">
+                <i
+                  class="footer-fourth-info__icon fa-solid fa-phone-volume"></i>
+                <a class="footer-fourth-info__link" href="tel: 666 888 000">
+                  666 888 0000
+                </a>
+              </span>
+              <span class="footer-fourth-info">
+                <i
+                  class="footer-fourth-info__icon fa-solid fa-envelope-open-text"></i>
+                <a
+                  class="footer-fourth-info__link"
+                  href="mailto:needhelp@codesk.com">
+                  needhelp@potisen.com
+                </a>
+              </span>
+              <form name="wishform" autocomplete="off">
+                <div class="input-container">
+                  <input
+                    class="form-input"
+                    id="text"
+                    type="text"
+                    placeholder="Enter your wishes" />
+                  <div class="form-button">
+                    <input class="button-send" type="submit" value="Send" />
+                  </div>
+                </div>
+                <div class="feedback">Please enter text</div>
               </form>
             </div>
-            <div class="purple-sub">
-              <p class="purple-sub__paragraph">SUBSCRIBE</p>
-            </div>
-          </div>
+          </article>
+          <article class="footer-copyright">
+            <p class="footer-copyright__text">
+              © Copyright
+              <a class="gav-theme" href="#">GaviasThemes</a>
+              2021. All Rights Reserved.
+            </p>
+          </article>
         </div>
       </div>
-    </div>
-
-    <script src="https://kit.fontawesome.com/cee9050981.js" crossorigin="anonymous"></script>
+    </footer>
+    <!-- ===== FOOTER END ===== -->
+    <script src="https://kit.fontawesome.com/cee9050981.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery.counterup@2.1.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="js/slick-animation.min.js"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

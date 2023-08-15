@@ -1,0 +1,72 @@
+.counter-box {
+    grid-template-columns: minmax(150px, 350px) minmax(150px, 350px) minmax(150px, 350px) minmax(150px, 350px);
+    grid-template-rows: 1fr;
+    margin-top: rem(80px);
+}
+.counter-first {
+    grid-column: 1;
+    grid-row: 1;
+    padding-bottom: rem(80px);
+    margin: 0;
+}
+
+.counter-second {
+    grid-column: 2;
+    grid-row: 1;
+    padding-bottom: rem(80px);
+    margin: 0;
+}
+
+.counter-third {
+    grid-column: 3;
+    grid-row: 1;
+    padding-bottom: rem(80px);
+    margin: 0;
+}
+
+.counter-fourth {
+    grid-column: 4;
+    grid-row: 1;
+    padding-bottom: rem(80px);
+    margin: 0;
+}
+
+.counter-first,
+.counter-second,
+.counter-third,
+.counter-fourth {
+    @include e(item) {
+        position: relative;
+        transition: all .5s;
+
+        &:hover {
+            background: #30f0b6;
+            border: 3px solid #30f0b6;
+        }
+
+        &:hover i {
+            transition: all .5s;
+            color: #000;
+            animation: 1.7s ease-in-out infinite animationSvg;
+        }
+
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            right: 15px;
+            background: #fff;
+            border-radius: 100%;
+            opacity: 0;
+            transform: scale(0);
+            transition: all .5s;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

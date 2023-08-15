@@ -1,0 +1,29 @@
+.bg-video {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: rem(110px);
+    padding-bottom: rem(110px);
+
+    @include e(title) {
+        text-align: initial;
+        flex-basis: 510px;
+        font-size: rem(35px);
+        padding-bottom: rem(30px);
+        padding-left: rem(50px);
+    }
+}
+
+.bg-video-button {
+    margin-right: rem(50px);
+    margin-bottom: rem(25px);
+}
+
+.trailer video {
+    max-width: 640px;
+}
+
+.close-video {
+    top: 25px;
+    right: 25px;
+}

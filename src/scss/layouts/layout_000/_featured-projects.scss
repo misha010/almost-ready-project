@@ -1,0 +1,274 @@
+.second-slider-card {
+    position: relative;
+
+    @include e(img) {
+        max-width: 100%;
+        width: 100%;
+        vertical-align: top;
+        height: 100%;
+        object-fit: cover;
+        min-height: 330px;
+    }
+}
+
+.featured-projects {
+    display: grid;
+    grid-template-columns: minmax(300px, 350px);
+    align-content: center;
+    justify-content: center;
+    margin: 0 0 rem(40px) 0;
+}
+
+.featured-projects-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(50px);
+    margin-bottom: rem(30px);
+        
+        @include e(span) {
+            display: flex;
+            align-items: center;
+            color: #674DF0;
+            font-size: rem(18px);
+            line-height: rem(37.8px);
+        
+        &::before {
+            content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                background: #30F0B6;
+                margin-right: rem(7px);
+                }
+            }
+        
+        @include e(title) {
+            margin: 0;
+            color: #1B1F2E;
+            font-size: rem(32px);
+            font-weight: 700;
+            line-height: rem(50px);
+            letter-spacing: rem(-0.8px);
+            }
+}
+
+.second-slider-card-pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    @include e(img) {
+        padding: rem(11px) rem(14px);
+        background: rgba(0, 0, 0, 0.36);
+        border-radius: 100%;
+        transition: all .5s;
+    }
+
+    @include e(camera) {
+        padding: rem(11px) rem(14px);
+        background: rgba(0, 0, 0, 0.36);
+        border-radius: 100%;
+        margin-left: rem(5px);
+        transition: all .5s;
+    }
+
+    @include e(ico) {
+        color: rgba(255, 255, 255, 0.80);
+        font-size: rem(16px);
+    }
+}
+
+.featured-projects-content-hide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: rem(20px) rem(20px) rem(40px) rem(20px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    background-image: linear-gradient(0deg, #1B1F2E 0%, rgba(27, 31, 46, 0.00) 100%);
+    transition: all .5s;
+
+    @include e(third) {
+        text-decoration: none;
+        color: #FFF;
+        font-size: rem(18px);
+        font-weight: 700;
+        line-height: rem(28px);
+    }
+}
+
+.featured-projects-first-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(7px);
+
+    @include e(first) {
+        text-decoration: none;
+        padding: rem(6px) rem(16px) rem(6px) rem(16px);
+        background: #674DF0;
+        color: #FFF;
+        font-size: rem(11px);
+        line-height: rem(25px);
+        letter-spacing: rem(2px);
+        text-transform: uppercase;
+    }
+
+    @include e(span) {
+        color: #FFF;
+        font-size: rem(12px);
+        line-height: rem(12px);
+        padding-left: rem(12px);
+        padding-right: rem(5px);
+    }
+
+    @include e(second) {
+        color: #FFF;
+        font-size: rem(12px);
+        font-weight: 500;
+        line-height: rem(25.2px);
+    }
+}
+
+.featured-projects-second-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    margin-bottom: rem(2px);
+
+    @include e(goal) {
+        color: #FFF;
+        font-size: rem(14px);
+        font-weight: 500;
+        line-height: rem(29.4px);
+    }
+
+    @include e(per) {
+        color: #FFF;
+        font-size: rem(14px);
+        font-weight: 500;
+        line-height: rem(16px);
+    }
+
+    @include e(line) {
+        display: block;
+        min-width: 100%;
+        height: 12px;
+        background: #fff;
+        border-radius: rem(4px);
+        transition: all 5s;
+    }
+
+    @include e(second-line) {
+        display: block;
+        // width: 31%;
+        height: 12px;
+        background: #30F0B6;
+        border-top-left-radius: rem(4px);
+        border-bottom-left-radius: rem(4px);
+        transition: all 5s;
+    }
+
+    @include e(third-line) {
+        display: block;
+        // width: 27%;
+        height: 12px;
+        background: #30F0B6;
+        border-top-left-radius: rem(4px);
+        border-bottom-left-radius: rem(4px);
+        transition: all 5s;
+    }
+
+    @include e(fourth-line) {
+        display: block;
+        // width: 50%;
+        height: 12px;
+        background: #30F0B6;
+        border-top-left-radius: rem(4px);
+        border-bottom-left-radius: rem(4px);
+        transition: all 5s;
+    }
+}
+
+.second-slider-card:active .featured-projects-content-hide {
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+
+.second-slider-card:active .featured-projects-content-hide .featured-projects-first-content__second {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:active .featured-projects-content-hide .featured-projects-first-content__icon {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:active .featured-projects-content-hide .featured-projects-content-hide__third {
+    color: #1b1f2e;
+    transition: all .7s;
+}
+
+.second-slider-card:active .featured-projects-content-hide .featured-projects-second-content__goal {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:active .featured-projects-content-hide .featured-projects-second-content__per {
+    color: #838694;
+    transition: all .7s;
+}
+
+.second-slider-card:active .featured-projects-content-hide .featured-projects-second-content__line {
+    background: #d8dae1;
+    transition: all .7s;
+}
+
+.second-slider-card-pos__img:active {
+    background: #674df0;
+    transition: all .7s;
+}
+
+.second-slider-card-pos__camera:active {
+    background: #674df0;
+    transition: all .7s;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.5rem 0 0 0;
+    margin: 0;
+}
+
+.slick-dots li {
+    padding: 0 rem(5px);
+    position: relative;
+}
+
+.slick-dots button {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #674df0;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background-color: #30F0B6;
+}

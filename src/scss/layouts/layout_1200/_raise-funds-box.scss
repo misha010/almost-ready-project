@@ -1,0 +1,42 @@
+.raise-funds-box {
+    min-height: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+        @include e(title) {
+            padding-left: rem(50px);
+        }
+
+        @include e(div) {
+            padding-right: rem(50px);            
+        }
+
+        @include e(link) {
+            &::after {
+                content: '';
+                position: absolute;
+                height: 14px;
+                width: 14px;
+                right: 0;
+                top: 0;
+                background: #FFF;
+            }
+    
+            &:hover::after {
+                height: 100%;
+                width: 100%;
+                transition: all 0.3s;
+            }
+    
+            &:hover .raise-funds-box__item {
+                color: #1B1F2D;
+                z-index: 1;
+                transform: all 0.3s;
+            }
+        }
+}

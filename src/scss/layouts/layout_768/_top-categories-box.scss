@@ -1,0 +1,34 @@
+.categories-article {
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 10px;
+    padding-top: rem(40px);
+}
+
+.article-first {
+    grid-column: 1 / span 2;
+    justify-items: center;
+
+    @include e(span) {
+        text-align: center;
+        max-width: 700px;
+    }
+}
+
+.article-first-info {
+    border-left: none;
+}
+
+.article-second-box {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr) minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.article-second_tech {grid-column: 1; grid-row: 1;}
+.article-second_film {grid-column: 2; grid-row: 2;}
+.article-second_ed {grid-column: 3; grid-row: 1;}
+.article-second_med {grid-column: 1; grid-row: 2;}
+.article-second_fash {grid-column: 2; grid-row: 1;}
+.article-second_des {grid-column: 3; grid-row: 2;}

@@ -1,0 +1,14 @@
+.help-section {
+    grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(600px, 1fr);
+}
+
+.help-section-first {
+
+    @include e(title) {
+        font-size: rem(43px);
+    }
+
+    @include e(span) {
+        font-size: rem(23px);
+    }
+}

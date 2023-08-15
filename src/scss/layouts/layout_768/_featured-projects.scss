@@ -1,0 +1,22 @@
+.featured-projects {
+    grid-template-columns: minmax(500px, 1fr);
+}
+
+.second-slider-card {
+    grid-column: 1;
+    margin-left: rem(10px);
+    margin-right: rem(10px);
+}
+
+.second-slider {
+    margin-left: rem(-10px);
+    margin-right: rem(-10px);
+}
+
+.featured-projects-text {
+    grid-column: 1 / span 2;
+}
+
+.featured-projects-content-hide {
+    padding: rem(30px) rem(25px) rem(40px) rem(25px);
+}

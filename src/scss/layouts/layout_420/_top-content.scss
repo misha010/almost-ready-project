@@ -1,0 +1,17 @@
+.hide-form {
+    padding: rem(12px) rem(14px);
+    right: -5px;
+
+    &::after {
+            right: 13px;
+        }
+}
+
+.hide-form-search {
+    right: 0;
+    padding: rem(14px) rem(12px);
+    
+    @include e(inp) {
+        width: initial;
+    }
+}
